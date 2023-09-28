@@ -8,17 +8,66 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="off-canvas-wrapper">
+    <div class="off-canvas-wrapper" style="background-color: #1b1b1b;">
         <!-- Your page content lives here -->
         <div class="off-canvas-content" data-off-canvas-content>
             <!-- main content within a `grid-container` -->
-            <div class="grid-container full-width">
+            <div class="grid-container full-width full-height">
                 <!-- `grid-x` represents a row -->
-                <div class="grid-x grid-padding-x">
-                    <div class="cell small-3 large-3 menu"><a href="index.html">Home</a></div>
-                    <div class="cell small-3 large-3 menu"><a href="projects.html">Projects</a></div>
-                    <div class="cell small-3 large-3 menu"><a href="resume.html">Resume</a></div>
-                    <div class="cell small-3 large-3 menu"><a href="fun.html">About Me</a></div>
+                <div class="grid-x grid-padding-x full-width" style="position: fixed;">
+                    <div class="cell small-3 large-3 menu align-center-middle"><a href="index.html">Home</a></div>
+                    <div class="cell small-3 large-3 menu align-center-middle"><a href="projects.html">Projects</a></div>
+                    <div class="cell small-3 large-3 menu align-center-middle"><a href="resume.html">Resume</a></div>
+                    <div class="cell small-3 large-3 menu align-center-middle"><a href="fun.html">Fun Fact</a></div>
+                </div>
+                    <!-- project 1 -->
+                <div class="grid-x grid-padding-x" style="margin: 8vw; margin-top: 0; margin-bottom: 3vh;">
+                    <div class="cell small-12 large-12" style="margin-top: 10vh; text-align: center"><h1>Projects</h1></div>
+                    <div class="cell small-12 large-12" style="margin-top: 4vh"><h1>Personal Website (This one!)</h1></div>
+                    <div class="cell small-12 large-12" style="background-color: rgb(255, 68, 68); height: 1.5vh;"><br></div>
+                    <div class="cell small-12 large-7" style="margin-top: 4vh;">
+                        <p>
+                            This website was made as my first project for my Web Development course at the University of St. Thomas.
+                            Ths class is one of the computer science electives I decided to take in order to learn more about web development.
+                            The purpose of this project is to show what we've learned about html and css at this point in the semester.
+                            I made the site using a combination of the foundation html framework and my own html and css coding.
+                        </p>
+                    </div>
+                    <div class="cell small-12 large-5" style="margin-top: 4vh;">
+                        <img src="project1.png" style="border: 0.25rem solid white;">
+                    </div>
+                    <!-- project 2 -->
+                    <div class="cell small-12 large-12" style="margin-top: 4vh"><h1>Rainball Web Game</h1></div>
+                    <div class="cell small-12 large-12" style="background-color: rgb(255, 68, 68); height: 1.5vh;"><br></div>
+                    <div class="cell small-12 large-7" style="margin-top: 4vh;">
+                        <p>
+                            For my final project in my Creative Coding elective last spring, I created an endless scroll web game 
+                            using a combination of html and javascript. We spent the semester learning the fundamentals of html and 
+                            javascript, in addition to several javascript libraries that we used to achieve different effects and 
+                            functionalities on our websites and projects. For this final project, I used a js library called THREE.js 
+                            to render a 3d game world containing obstacles and the ball which the player controls. I also used another 
+                            js library to allow my site to interface with an xbox controller for user input.
+                        </p>
+                    </div>
+                    <div class="cell small-12 large-5" style="margin-top: 4vh;">
+                        <img src="project2.png" style="border: 0.25rem solid white;">
+                    </div>
+                    <!-- project 3 -->
+                    <div class="cell small-12 large-12" style="margin-top: 4vh"><h1>Excel Report Generation Script</h1></div>
+                    <div class="cell small-12 large-12" style="background-color: rgb(255, 68, 68); height: 1.5vh;"><br></div>
+                    <div class="cell small-12 large-7" style="margin-top: 4vh;">
+                        <p>
+                            During my internship and part-time employment at Calspan, I developed a Python script to generate PDF 
+                            reports from excel templates on Linux. The purpose of this project was to simplify the process of making 
+                            these reports, as the previous method involved running an entire windows VM just to run excel macros. 
+                            My script uses two different Python APIs to interface with excel files directly on Linux. 
+                            It uses this functionality to pull in data from separate files to populate an excel template while preserving 
+                            all charts and style elements, then generating a final PDF from the modifies excel file.
+                        </p>
+                    </div>
+                    <div class="cell small-12 large-5" style="margin-top: 4vh;">
+                        <img src="project3.png" style="border: 0.25rem solid white;">
+                    </div>
                 </div>
             </div>
         </div>
